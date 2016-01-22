@@ -1,16 +1,18 @@
 /* app css stylesheet */
 
 .answer-container {
-    margin-bottom: 5px;
-    border: 1px solid transparent;
+    margin-bottom: 3px;
+    border: 2px solid transparent;
 }
 
 .wrong{
-    border: 1px solid red;
+    border: 2px solid red;
+    background-color: rgba(255,0,0,0.1)!important;
 }
 
 .ok{
-    border: 1px solid green;
+    border: 2px solid green;
+    background-color: rgba(0,255,0,0.1)!important;
 }
 
 .checkbox-container{
