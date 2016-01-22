@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller('QuizCtrl', function($scope, Questions, shuffle) {
+app.controller('QuizCtrl', function($scope, Questions, shuffle, $sce) {
         $scope.questionIndex = 0;
         $scope.question = {};
         $scope.score = 0;
@@ -13,7 +13,7 @@ app.controller('QuizCtrl', function($scope, Questions, shuffle) {
             q.load().then(function () {
                 q.shuffle();
                 $scope.questions = q.questions;
-                $scope.question = $scope.questions[$scope.questionIndex];
+                changeQuestion();
                 $scope.maxScore = $scope.questions.length * 4;
             });
         }
@@ -45,6 +45,12 @@ app.controller('QuizCtrl', function($scope, Questions, shuffle) {
         function changeQuestion(){
             $scope.question = $scope.questions[$scope.questionIndex];
             shuffle($scope.question.answers);
+            angular.forEach($scope.question.answers, function(item) {
+                if(!(typeof(item.answer) == 'object')) {
+                    item.answer = $sce.trustAsHtml(item.answer);
+                }
+            });
+
         }
 
         $scope.check = function(){

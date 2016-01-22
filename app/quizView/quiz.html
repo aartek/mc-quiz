@@ -10,10 +10,9 @@
         <p>{{questionIndex + 1}}. {{question.question}}</p>
         <ul class="uk-list uk-list-striped">
             <li class="answer" ng-repeat="item in question.answers" ng-class="{'wrong': validationOn && !item.ok, 'ok': validationOn && item.ok}">
-                <div class="uk-float-right uk-text-primary" ng-show="validationOn && item.sure!=='1'" title="Nie wiadomo"><i class="uk-icon-question-circle"></i></div>
-                <input type="checkbox" class="uk-margin-right" ng-model="item.checked"/>
-                <span ng-click="item.checked=!item.checked">{{item.answer}}</span>
-
+                <input class="uk-float-left" type="checkbox" class="uk-margin-right" ng-model="item.checked"/>
+                <span ng-click="item.checked=!item.checked" ng-bind-html="item.answer"></span>
+                <span class="uk-float-right uk-text-primary" ng-show="validationOn && item.sure!=='1'" title="Nie wiadomo"><i class="uk-icon-question-circle"></i></span>
             </li>
         </ul>
         <div class="uk-width-small-1-1">Wynik: {{score}}/{{maxScore}}</div>
