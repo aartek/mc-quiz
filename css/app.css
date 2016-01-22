@@ -1,7 +1,8 @@
 /* app css stylesheet */
 
-.answer{
+.answer-container {
     margin-bottom: 5px;
+    border: 1px solid transparent;
 }
 
 .wrong{
@@ -10,4 +11,12 @@
 
 .ok{
     border: 1px solid green;
+}
+
+.checkbox-container{
+    width: 30px;
+}
+
+.answer{
+    overflow: hidden;
 }
