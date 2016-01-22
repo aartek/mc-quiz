@@ -1,0 +1,22 @@
+<div class="uk-grid" ng-swipe-disable-mouse ng-swipe-left="next()" ng-swipe-right="prev()">
+    <div class="uk-width-1-1">
+        <div class="uk-width-1-1">
+            <button class="uk-button uk-button-large" ng-click="prev()"><i class="uk-icon-arrow-left"></i></button>
+            {{questionIndex + 1 }} z {{questions.length}}
+            <button class="uk-button uk-button-large" ng-click="next()"><i class="uk-icon-arrow-right"></i></button>
+            <button class="uk-button uk-button-large uk-float-right" ng-click="restart()">Od nowa</button>
+            <button class="uk-button uk-button-large uk-button-primary uk-width-small-1-1 uk-width-medium-1-10" ng-click="check()">Sprawdź</button>
+        </div>
+        <p>{{questionIndex + 1}}. {{question.question}}</p>
+        <ul class="uk-list uk-list-striped">
+            <li class="answer" ng-repeat="item in question.answers" ng-class="{'wrong': validationOn && !item.ok, 'ok': validationOn && item.ok}">
+                <div class="uk-float-right uk-text-primary" ng-show="validationOn && item.sure!=='1'" title="Nie wiadomo"><i class="uk-icon-question-circle"></i></div>
+                <input type="checkbox" class="uk-margin-right" ng-model="item.checked"/>
+                <span ng-click="item.checked=!item.checked">{{item.answer}}</span>
+
+            </li>
+        </ul>
+        <div class="uk-width-small-1-1">Wynik: {{score}}/{{maxScore}}</div>
+
+    </div>
+</div>

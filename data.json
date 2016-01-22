@@ -1,0 +1,446 @@
+{
+  "data": [
+    {
+      "question" : "Koncepcja wyboru działania:",
+      "answers" : 
+      [
+        {
+          "answer" : "wymaga, aby w budowanym modelu cyfrowym przy każdym przesunięciu czasu zbadać możliwość wystąpienia wszystkich zdarzeń czasowych i warunkowych",
+          "check" : "1",
+          "sure" : "1"
+        }, 
+        {
+          "answer" : "umożliwia modelowanie systemów masowej obsługi",
+          "check" : "1",
+          "sure" : "1"
+        },
+        {
+          "answer" : "implementowana jest w programie Simnon",
+          "check" : "0",
+          "sure" : "1"
+        },
+        {
+          "answer" : "znajduje zastosowanie przy modelowaniu dowolnych układów ciągłych",
+          "check" : "0",
+          "sure" : "1"
+        }
+      ]
+    },
+    {
+      "question" : "Które z poniższych formuł opisują funkcję dodatnio określoną?",
+      "answers" : 
+      [
+        {
+          "answer" : "V(x<sub>1</sub>, x<sub>2</sub>) = 2x<sub>1</sub><sup>2</sup> - 4x<sub>1</sub>x<sub>2</sub> + 5x<sub>2</sub><sup>2</sup>",
+          "check" : "1",
+          "sure" : "1"
+        }, 
+        {
+          "answer" : "V(x<sub>1</sub>, x<sub>2</sub>) = 2x<sub>1</sub><sup>2</sup> - 3x<sub>1</sub>x<sub>2</sub> + x<sub>2</sub><sup>2</sup>",
+          "check" : "0",
+          "sure" : "1"
+        },
+        {
+          "answer" : "V(x<sub>1</sub>, x<sub>2</sub>) = 2x<sub>1</sub><sup>2</sup> - 7x<sub>1</sub>x<sub>2</sub> + 5x<sub>2</sub><sup>2</sup>",
+          "check" : "0",
+          "sure" : "1"
+        },
+        {
+          "answer" : "V(x<sub>1</sub>, x<sub>2</sub>) = 3x<sub>1</sub><sup>2</sup> + 2x<sub>2</sub><sup>2</sup>",
+          "check" : "1",
+          "sure" : "1"
+        }
+      ]
+    },
+    {
+      "question" : "W pakiecie SimEvents do budowy modelu wykorzystywane są: (bo to koncepcja interakcji procesów)",
+      "answers" : 
+      [
+        {
+          "answer" : "koncepcja planowania zdarzeń",
+          "check" : "0",
+          "sure" : "1"
+        }, 
+        {
+          "answer" : "koncepcja wyboru działania",
+          "check" : "0",
+          "sure" : "1"
+        },
+        {
+          "answer" : "dyskretne równania stanu",
+          "check" : "0",
+          "sure" : "1"
+        },
+        {
+          "answer" : "ciągłe równania stanu",
+          "check" : "0",
+          "sure" : "1"
+        }
+      ]
+    },
+    {
+      "question" : "Oceń poprawność następujących stwierdzeń dla dowolnego modelu układu zdarzeń dyskretnych zbudowanego według koncepcji planowania zdarzeń:",
+      "answers" : 
+      [
+        {
+          "answer" : "wykrycie przez procedurę kontroli symulacji pustego zbioru zaplanowanych zdarzeń w trakcie realizacji eksperymentu oznacza, że aktualny stan układu jest ostateczny",
+          "check" : "0",
+          "sure" : "0"
+        }, 
+        {
+          "answer" : "planowanie dotyczy zarówno tego, co będzie odbywać się w przyszłości, jak i przeszłości",
+          "check" : "0",
+          "sure" : "1"
+        },
+        {
+          "answer" : "mechanizmem upływu czasu symulacyjnego steruje procedura kontroli symulacji",
+          "check" : "1",
+          "sure" : "1"
+        },
+        {
+          "answer" : "zaplanowanie zdarzenia wymaga między innymi obliczenia chwili zajścia tego zdarzenia",
+          "check" : "1",
+          "sure" : "1"
+        }
+      ]
+    },
+    {
+      "question" : "Oceń poprawność następująch stwierdzeń dotyczących schematów różnicowych:",
+      "answers" : 
+      [
+        {
+          "answer" : "w schematach jednokrokowych kolejne przybliżenie rozwiązania t<sub>k+1</sub>, v<sub>k+1</sub> zależy od wartości v<subk</sub> i pochodnej f w otoczeniu t<subk</sub>, v<subk</sub>",
+          "check" : "1",
+          "sure" : "0"
+        }, 
+        {
+          "answer" : "funkcja f występująca we wzorach schematów różnicowych jest prawą stroną równania stanu",
+          "check" : "1",
+          "sure" : "1"
+        },
+        {
+          "answer" : "schemat różnicowy o postaci v<sub>j+1</sub> = F(v<sub>j+1</sub>, v<sub>j</sub>, … , v<sub>j-p</sub>, t<sub>j</sub>) jest schematem jawnym",
+          "check" : "0",
+          "sure" : "1"
+        },
+        {
+          "answer" : "metody Rungego-Kutty są przykładami metod jednokrokowych",
+          "check" : "1",
+          "sure" : "1"
+        }
+      ]
+    },
+    {
+      "question" : "Oceń poprawnośc poniższych stwierdzeń związanych z opisem w postaci równań stanu:",
+      "answers" : 
+      [
+        {
+          "answer" : "w równaniu stanu nie występuje zależność od pochodnych sygnału wejściowego",
+          "check" : "1",
+          "sure" : "1"
+        }, 
+        {
+          "answer" : "dla danego układu istnieje tylko jeden opis za pomocą równań stanu",
+          "check" : "0",
+          "sure" : "1"
+        },
+        {
+          "answer" : "równania stanu można stosować zarówno do opisu układów liniowych jak i nieliniowych",
+          "check" : "1",
+          "sure" : "1"
+        },
+        {
+          "answer" : "równania stanu są równaniami różniczkowymi",
+          "check" : "0",
+          "sure" : "1"
+        }
+      ]
+    },
+    {
+      "question" : "Oceń poprawność następujących stwierdzeń dotyczących wybranych metod znajdowania równań stanu układu dynamicznego:",
+      "answers" : 
+      [
+        {
+          "answer" : "metodę zmiennej pomocniczej można zastosować w przypadku występowania pochodnych zmiennych wejściowych",
+          "check" : "1",
+          "sure" : "1"
+        }, 
+        {
+          "answer" : "metoda mieszana polega na złożeniu metody zmiennej pomocniczej i metody kolejnych całkowań",
+          "check" : "0",
+          "sure" : "1"
+        },
+        {
+          "answer" : "metoda ogólna znajduje zastosowanie w przypadku, gdy wystepuje pochodna zmiennej wejsciowej",
+          "check" : "0",
+          "sure" : "1"
+        },
+        {
+          "answer" : "zmienne stanu uzyskiwane przy zastosowaniu metody kolejnych całkowań są sygnałem wyjściowym lub pochodnymi sygnału wyjściowego",
+          "check" : "0",
+          "sure" : "1"
+        }
+      ]
+    },
+    {
+      "question" : "Oceń poprawność następujących stwierdzeń charakterystyki metod związanych z obsługą komunikatów w środowisku OMNet++:",
+      "answers" : 
+      [
+        {
+          "answer" : "metoda send umieszcza komunikat sterujący w liście przyszłych zdarzeń (FES)",
+          "check" : "0",
+          "sure" : "1"
+        }, 
+        {
+          "answer" : "w dowolnej chwili czasu symulacyjnego wywołanie o postaci scheduleAt(simTime(), msg) powoduje natychmiastowe nadejście komunikatu sterującego",
+          "check" : "1",
+          "sure" : "1"
+        },
+        {
+          "answer" : "metoda handleMessage wykrywa zarówno nadejście komunikatów sterujących, jak i nadesłanych przez inny moduł",
+          "check" : "1",
+          "sure" : "1"
+        },
+        {
+          "answer" : "metoda scheduleAt służy do natychmiastowego (tj. dla bieżącej wartości czasu symulacyjnego) wywołania komunikatów do innych modułów",
+          "check" : "0",
+          "sure" : "1"
+        }
+      ]
+    },
+    {
+      "question" : "W środowisku Matlab Simulink funkcja sim umożliwia:",
+      "answers" : 
+      [
+        {
+          "answer" : "koncepcja planowania zdarzeń",
+          "check" : "1",
+          "sure" : "0"
+        }, 
+        {
+          "answer" : "rozwiązanie zagadnienia początkowego dla układów dyskretnych",
+          "check" : "2",
+          "sure" : "1"
+        },
+        {
+          "answer" : "rozwiązanie zagadnienia optymalizacji parametrycznej",
+          "check" : "0",
+          "sure" : "1"
+        },
+        {
+          "answer" : "wyznaczenie czasowej funkcji przejścia",
+          "check" : "0",
+          "sure" : "1"
+        }
+      ]
+    },
+    {
+      "question" : "W środowisku Matlab/Simulink funkcja sim umożliwia:",
+      "answers" : 
+      [
+        {
+          "answer" : "rozwiązanie zagadnienia początkowego dla układów dyskretnych",
+          "check" : "0",
+          "sure" : "1"
+        }, 
+        {
+          "answer" : "rozwiązanie zagadnienia optymalizacji parametrycznej",
+          "check" : "0",
+          "sure" : "1"
+        },
+        {
+          "answer" : "rozwiązanie zagadnienia początkowego dla układów ciągłych",
+          "check" : "1",
+          "sure" : "1"
+        },
+        {
+          "answer" : "wyznaczenie czasowej funkcji przejścia",
+          "check" : "0",
+          "sure" : "1"
+        }
+      ]
+    },
+    {
+      "question" : "Oceń poprawność następujących stwierdzeń dotyczących zadania optymalizacji parametrycznej:",
+      "answers" : 
+      [
+        {
+          "answer" : "zadanie dwugraniczne jest przykładem zadania optymalizacji parametrycznej",
+          "check" : "1",
+          "sure" : "1"
+        }, 
+        {
+          "answer" : "parametrami optymalizacji <bold>nie mogą</bold> być warunki poczatkowe zmiennych stanu",
+          "check" : "0",
+          "sure" : "1"
+        },
+        {
+          "answer" : "w zadaniach optymalizacji parametrycznej szukamy takich optymalnych wartości parametrów α, by wskaźnik jakości przyjął wartość minimalną",
+          "check" : "1",
+          "sure" : "1"
+        },
+        {
+          "answer" : "szukanie maksymalnej wartości wskaźnika jakości można zastąpić szukaniem minimalnej wartości wskaźnika pomnożonego przez -1",
+          "check" : "1",
+          "sure" : "1"
+        }
+      ]
+    },
+    {
+      "question" : "Oceń poprawność następujących stwierdzeń dla dowolnego modelu układu zdarzeń dyskretnych zbudowanego według koncepcji planowania zdarzeń:",
+      "answers" : 
+      [
+        {
+          "answer" : "można planować zdarzenia odbywające się w przeszłości",
+          "check" : "0",
+          "sure" : "1"
+        }, 
+        {
+          "answer" : "zaplanowanie zdarzenia wymaga między innymi obliczenia chwili zajścia tego zdarzenia",
+          "check" : "1",
+          "sure" : "1"
+        },
+        {
+          "answer" : "mechanizmem upływu czasu symulacyjnego steruje procedura kontroli symulacji",
+          "check" : "1",
+          "sure" : "1"
+        },
+        {
+          "answer" : "obecność elementów w zbiorze zaplanowanych zdarzeń po zakończeniu realizacji eksperymentu oznacza, że eksperyment zakończył się w sposób nieprawidłowy (błędny)",
+          "check" : "0",
+          "sure" : "1"
+        }
+      ]
+    },
+    {
+      "question" : "Oceń poprawność poniższych stwierdzeń związanych z opisem w postaci równań stanu:",
+      "answers" : 
+      [
+        {
+          "answer" : "dla danego układu istnieje tylko jeden opis za pomocą równań stanu",
+          "check" : "0",
+          "sure" : "1"
+        }, 
+        {
+          "answer" : "równania stanu można stosować zarówno do opisu układów liniowych, jak i nieliniowych",
+          "check" : "1",
+          "sure" : "0"
+        },
+        {
+          "answer" : "w równaniu stanu nie występuje zależność od pochodnych sygnału wejściowego",
+          "check" : "1",
+          "sure" : "1"
+        },
+        {
+          "answer" : "równania stanu są równaniami różniczkowymi",
+          "check" : "0",
+          "sure" : "1"
+        }
+      ]
+    },
+    {
+      "question" : "Oceń poprawność następujących stwierdzeń dotyczacych zagadnień związanych z obliczaniem wartości początkowych zmiennych stanu i zmiennych wyjścia:",
+      "answers" : 
+      [
+        {
+          "answer" : "przy zastosowaniu metody szeregowej wartości początkowe kolejnych zmiennych stanu są równe warunkom początkowym dla zmiennej wyjścia i jej kolejnych pochodnych",
+          "check" : "0",
+          "sure" : "1"
+        }, 
+        {
+          "answer" : "przy zastosowaniu metody ogólnej wartości początkowe kolejnych zmiennych stanu są równe warunkom początkowym dla zmiennej wyjścia i jej kolejnych pochodnych",
+          "check" : "1",
+          "sure" : "1"
+        },
+        {
+          "answer" : "skokowa zmiana sygnału wejśiowego w chwili t = 0 powoduje, że pomiędzy wartościami zmiannych stanu zachodzi następująca relacja: x(0<sup>+</sup>) ≠ x(0<sup>-</sup>)",
+          "check" : "1",
+          "sure" : "1"
+        },
+        {
+          "answer" : "przy zastosowaniu metody równoległej wartości początkowe kolejnych zmiennych stanu są równe warunkom początkowym dla zmiennej wyjścia i jej kolejnych pochodnych",
+          "check" : "0",
+          "sure" : "1"
+        }
+      ]
+    },
+    {
+      "question" : "Oceń poprawność następujących stwierdzeń dotyczących schematów różnicowych:", 
+      "answers" : 
+      [
+        {
+          "answer" : "schemat różnicowy o postaci v<sub>j+1</sub> = F(v<sub>j+1</sub>, v<sub>j</sub>, … , v<sub>j-p</sub>, t<sub>j</sub>) jest schematem jawnym",
+          "check" : "0",
+          "sure" : "1"
+        }, 
+        {
+          "answer" : "schemat różnicowy jednokrokowy ma postać v<sub>j+1</sub> = F(v<sub>j</sub>,t<sub>j</sub>)",
+          "check" : "1",
+          "sure" : "0"
+        },
+        {
+          "answer" : "metody Rungego-Kutty są przykladami metod jednokrokowych",
+          "check" : "1",
+          "sure" : "1"
+        },
+        {
+          "answer" : "schemat różnicowy o postaci v<sub>j+1</sub> = F(v<sub>j</sub>, v<sub>j-1</sub>, … , v<sub>j-p</sub>, t<sub>j</sub>) jest schematem jawnym",
+          "check" : "1",
+          "sure" : "1"
+        }
+      ]
+    },
+    {
+      "question" : "Oceń poprawność następujących stwierdzeń dotyczących metody eliminacji:",
+      "answers" : 
+      [
+        {
+          "answer" : "nie może być wykorzystywana do generacji liczb o dowolnym nieobciętym rozkładzie normalnym",
+          "check" : "0",
+          "sure" : "0"
+        }, 
+        {
+          "answer" : "jest zawsze bardziej efektywna od metody odwracania dystrybuanty",
+          "check" : "0",
+          "sure" : "0"
+        },
+        {
+          "answer" : "umożliwia wygenerowanie kolejnej liczby zawsze przy jednokrotnym użyciu pomocniczego generatora liczb o rozkładzie równomiernym",
+          "check" : "0",
+          "sure" : "1"
+        },
+        {
+          "answer" : "znajduje zastosowanie w przypadku, gdy funkcja gęstości rozkładu nie jest ograniczona",
+          "check" : "0",
+          "sure" : "1"
+        }
+      ]
+    },
+    {
+      "question" : "Oceń poprawność następujących stwierdzeń dla modelu systemu M/M/1 zbudowanego z wykorzystaniem środowiska OMNet++:",
+      "answers" : 
+      [
+        {
+          "answer" : "warunkiem zakończenia obsługi danego zgłoszenia jest nadejście komunikatu informującego o przybyciu kolejnego zgłoszenia",
+          "check" : "0",
+          "sure" : "1"
+        }, 
+        {
+          "answer" : "dla wejścia zgłoszenia na stanowisko obsługi pusta kolejka przed stanowiskiem jest warunkiem koniecznym i wystarczającym",
+          "check" : "0",
+          "sure" : "1"
+        },
+        {
+          "answer" : "dla zbudowania poprawnego modelu wystarczające jest posłużenie się w obrębie całego modelu dwoma typami komunikatów sterujących, sygnalizującymi wystąpienie zdarzeń “wygenerowanie kolejnego zgłoszenia” i “zakończenie obsługi”",
+          "check" : "1",
+          "sure" : "0"
+        },
+        {
+          "answer" : "w celu zebrania danych dla przygotowania wykresu zmian aktualnej liczby zgłoszeń przebywających w systemie należy zastosować klasę cQueue",
+          "check" : "0",
+          "sure" : "1"
+        }
+      ]
+    }
+  ]
+}
