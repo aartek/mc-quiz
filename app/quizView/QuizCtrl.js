@@ -47,7 +47,7 @@ app.controller('QuizCtrl', function ($scope, Questions, shuffle, $sce) {
         $scope.question = $scope.questions[$scope.questionIndex];
         shuffle($scope.question.answers);
         angular.forEach($scope.question.answers, function (item) {
-            if (!(typeof(item.answer) == 'object')) {
+            if (typeof(item.answer) !== 'object') {
                 item.answer = $sce.trustAsHtml(item.answer);
             }
         });
