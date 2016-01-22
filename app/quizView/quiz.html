@@ -1,11 +1,11 @@
-<div class="uk-grid uk-margin-top" ng-swipe-disable-mouse ng-swipe-left="next()" ng-swipe-right="prev()">
+<div class="uk-grid uk-margin-small-top" ng-swipe-disable-mouse ng-swipe-left="next()" ng-swipe-right="prev()">
     <div class="uk-width-1-1">
         <div class="uk-width-1-1">
-            <button class="uk-button uk-button-large" ng-click="prev()"><i class="uk-icon-arrow-left"></i></button>
+            <button class="uk-button uk-button-large uk-margin-small-top" ng-click="prev()"><i class="uk-icon-arrow-left"></i></button>
             {{questionIndex + 1 }} z {{questions.length}}
-            <button class="uk-button uk-button-large" ng-click="next()"><i class="uk-icon-arrow-right"></i></button>
-            <button class="uk-button uk-button-large uk-float-right" ng-click="restart()">Od nowa</button>
-            <button class="uk-button uk-button-large uk-button-primary uk-width-small-1-1 uk-width-medium-1-10" ng-click="check()">Sprawdź</button>
+            <button class="uk-button uk-button-large uk-margin-small-top" ng-click="next()"><i class="uk-icon-arrow-right"></i></button>
+            <button class="uk-button uk-button-large uk-margin-small-top uk-float-right" ng-click="restart()">Od nowa</button>
+            <button class="uk-button uk-button-large uk-button-primary uk-width-small-1-1 uk-width-medium-1-10 uk-margin-small-top" ng-click="check()">Sprawdź</button>
         </div>
         <p>{{questionIndex + 1}}. {{question.question}}</p>
         <ul class="uk-list uk-list-striped">
