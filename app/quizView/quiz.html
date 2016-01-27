@@ -7,7 +7,7 @@
             <button class="uk-button uk-button-large uk-margin-small-top uk-float-right" ng-click="restart()">Od nowa</button>
             <button class="uk-button uk-button-large uk-button-primary uk-width-small-1-1 uk-width-medium-1-10 uk-margin-small-top" ng-click="check()">Sprawdź</button>
         </div>
-        <p>{{questionIndex + 1}}. {{question.question}}</p>
+        <p>{{questionIndex + 1}}. <span ng-bind-html="question.question">{{question.question}}</span></p>
         <ul class="uk-list uk-list-striped">
             <li class="answer-container uk-width-1-1" ng-repeat="item in question.answers" ng-class="{'wrong': validationOn && !item.ok, 'ok': validationOn && item.ok, 'unknown':validationOn && item.check==='2'}">
                 <div class="uk-float-left">
