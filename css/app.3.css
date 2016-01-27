@@ -6,13 +6,18 @@
 }
 
 .wrong{
-    border: 2px solid red;
+    border-color: red;
     background-color: rgba(255,0,0,0.1)!important;
 }
 
 .ok{
-    border: 2px solid green;
+    border-color: green;
     background-color: rgba(0,255,0,0.1)!important;
+}
+
+.unknown{
+    border-color: blue;
+    background-color: rgba(0,0,255,0.1)!important;
 }
 
 .answer{

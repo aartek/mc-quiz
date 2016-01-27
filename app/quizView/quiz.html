@@ -9,7 +9,7 @@
         </div>
         <p>{{questionIndex + 1}}. {{question.question}}</p>
         <ul class="uk-list uk-list-striped">
-            <li class="answer-container uk-width-1-1" ng-repeat="item in question.answers" ng-class="{'wrong': validationOn && !item.ok, 'ok': validationOn && item.ok}">
+            <li class="answer-container uk-width-1-1" ng-repeat="item in question.answers" ng-class="{'wrong': validationOn && !item.ok, 'ok': validationOn && item.ok, 'unknown':validationOn && item.check==='2'}">
                 <div class="uk-float-left">
                     <input type="checkbox" class="uk-margin-right" ng-model="item.checked"/>
                 </div>

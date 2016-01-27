@@ -14,11 +14,24 @@ app.controller('QuizCtrl', function ($scope, Questions, shuffle, $sce) {
             q.shuffle();
             $scope.questions = q.questions;
             changeQuestion();
-            $scope.maxScore = $scope.questions.length * 4;
+            $scope.maxScore = countAnswers($scope.questions);
         });
     }
 
     load();
+
+    function countAnswers(questions){
+        var cnt = 0;
+        angular.forEach(questions, function(q){
+            angular.forEach(q.answers,function(a){
+                //Omit unknown answers from max score.
+                if(a.check!=='2'){
+                    cnt++;
+                }
+            });
+        });
+        return cnt;
+    }
 
     $scope.prev = function () {
         if ($scope.questionIndex > 0) {
